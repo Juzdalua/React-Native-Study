@@ -4,7 +4,6 @@
     <!-- Default permission -->
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- Geolocation permission -->
     <!-- Always include this permission -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
