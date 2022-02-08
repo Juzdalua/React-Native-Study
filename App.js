@@ -32,6 +32,25 @@ const App = () => {
   //     {enableHighAccuracy: true, timeout: 15000, maximumAge: 10000},
   //   );
   // }, []);
+
+  // if (hasLocationPermission) {
+  //   Geolocation.getCurrentPosition(
+  //       (position) => {
+  //         console.log(position);
+  //       },
+  //       (error) => {
+  //         // See error code charts below.
+  //         console.log(error.code, error.message);
+  //       },
+  //       { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
+  //   );
+  // }
+  // console.log(hasLocationPermission)
+  Geolocation.getCurrentPosition(
+    (position) => {console.log(position);},
+    (error) => {console.log(`Error: `,error);},
+    { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
+  )
   
 
   return (        
